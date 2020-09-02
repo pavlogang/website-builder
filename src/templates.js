@@ -19,8 +19,8 @@ function textColumns(block) {
 } 
 
 function image(block) {
-  const {alt, styles, imageStyles} = block.options
-  const html = `<img src="${block.value}" alt="${alt}" style="${imageStyles}" />`
+  const {alt, styles, imageStyles} = this.options
+  const html = `<img src="${this.value}" alt="${alt}" style="${imageStyles}" />`
   return row(html, styles)
 }
 
